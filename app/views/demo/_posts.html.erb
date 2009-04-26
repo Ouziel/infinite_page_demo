@@ -1,0 +1,8 @@
+<%= render :partial => "post", :collection => @posts  %>
+<%= infinite_page @posts, 
+                      :update => "content",
+                      :position => :bottom,
+                      :complete => "$$('#infinite_page_spinner img')[0].hide();",
+                      :before => "$$('#infinite_page_spinner img')[0].show();",
+                      :first => "$$('#infinite_page_spinner img')[0].hide();",
+                      :last => "$('infinite_page_spinner').hide();" %>
