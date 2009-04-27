@@ -1,6 +1,8 @@
 
-<div id="infinite_page_spinner"><%=image_tag("infinite_page_spinner.gif")%></div>
+<div id="infinite_page_spinner"><%=image_tag("infinite_page_spinner.gif")%><div id="debug">dsds</div></div>
 <div id="content">
   <h1>Infinite page demo</h1>
+  <a href=http://github.com/Ouziel/infinite_page/tree/master">http://github.com/Ouziel/infinite_page/</a>
+  
   <%= render :partial => "posts", :object => @posts %>
 </div>
